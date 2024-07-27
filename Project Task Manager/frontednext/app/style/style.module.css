@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+
+.boxStyle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 50%;
+  min-height: 100vh; /* Cambiar height a min-height */
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0); /* Fondo transparente */
+  border: 1px solid lightgrey; /* Bordes grises más claros */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para el borde */
+  padding: 1rem; /* Añade algo de padding si es necesario */
+  overflow-y: auto; /* Añade scroll si el contenido es mayor que el contenedor */
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 1rem; /* Espacio entre el header y el contenido */
+}
+
+.header h6:last-child {
+  margin-bottom: 0; /* Asegura que no haya margen adicional debajo del último h6 */
+}
+
+.header hr {
+  width: 100%;
+  border: none; /* Elimina el borde por defecto */
+  height: 1px; /* Grosor de la línea */
+  background-color: lightgrey; /* Color de la línea */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); /* Sombra de la línea */
+  margin-top: 0.5rem; /* Espacio entre el texto y la línea */
+}
+
+
+.boxStyle h1, 
+.boxStyle h2, 
+.boxStyle h3, 
+.boxStyle h4, 
+.boxStyle h5, 
+.boxStyle h6 {
+  font-family: 'Roboto', sans-serif; /* Cambia a la fuente deseada */
+}
+
+.titleMyTasks{
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 768px) {
+  .boxStyle {
+    width: 90%; /* Ajusta el ancho al 90% en pantallas más pequeñas */
+    height: auto; /* Cambia la altura a automática para que se ajuste al contenido */
+    padding: 0.5rem; /* Reduce el padding en pantallas más pequeñas */
+  }
+}
+
+/* Ajustes para pantallas de tabletas */
+@media (max-width: 1024px) {
+  .boxStyle {
+    width: 70%; /* Ajusta el ancho al 70% en pantallas de tabletas */
+    height: auto; /* Cambia la altura a automática para que se ajuste al contenido */
+    padding: 0.75rem; /* Ajusta el padding */
+  }
+}
+
+.createTask {
+  padding-bottom: 2rem;
+  display: flex;
+  align-items: center; /* Centra verticalmente el texto y el botón */
+  margin-top: 1rem; /* Espacio superior si es necesario */
+}
+
+.createTask span {
+  margin-left: 0.8rem; /* Espacio entre el texto y el botón */
+  font-size: 1rem; /* Tamaño de fuente para el texto */
+}
+
+.addButton {
+  width: 2rem; /* Ancho del botón */
+  height: 2rem; /* Alto del botón */
+  border: none; /* Sin borde */
+  border-radius: 50%; /* Botón redondo */
+  background-color: rgb(39, 101, 234); /* Color de fondo del botón */
+  color: white; /* Color del texto del botón */
+  font-size: 1.5rem; /* Tamaño del símbolo + */
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centra el símbolo en el botón */
+  cursor: pointer; /* Cursor tipo puntero */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra del botón */
+}
+
+.addButton:hover {
+  background-color: rgb(2, 19, 168); /* Color de fondo del botón al pasar el ratón */
+}
+
+.logoutButton {
+  position: fixed;
+  top: 10px; /* Ajusta la distancia desde la parte superior según sea necesario */
+  right: 10px; /* Ajusta la distancia desde la parte derecha según sea necesario */
+  cursor: pointer; /* Asegúrate de que el cursor cambie a pointer para indicar que es clickeable */
+  z-index: 1000; /* Asegúrate de que el botón esté por encima de otros elementos */
+}
+
+
+/* Register.css */
+/* Register.css */
+.background-animation {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(45deg, #ff6f61, #ffb74d, #01da09);
+  background-size: 600% 600%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+.card {
+  position: relative;
+  z-index: 1;
+}
